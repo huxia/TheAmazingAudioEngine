@@ -527,7 +527,7 @@ typedef enum {
  *  4. Call @link start: @endlink to begin processing audio.
  */
 @interface AEAudioController : NSObject
-
++ (BOOL)allocated;
 #pragma mark - Setup and start/stop
 /** @name Setup and start/stop */
 ///@{

@@ -980,7 +980,9 @@ static OSStatus ioUnitRenderNotifyCallback(void *inRefCon, AudioUnitRenderAction
     } error:error];
     
 }
-
++ (BOOL)allocated{
+    return __AEAllocated;
+}
 - (void)dealloc {
     __AEAllocated = NO;
     
